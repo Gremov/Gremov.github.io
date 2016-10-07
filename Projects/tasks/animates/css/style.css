@@ -1,0 +1,364 @@
+body {
+    font-size: 16px;
+    font-family: 'Libre Baskerville', Arial, Tahoma, sans-serif;
+
+    color: #ffffff;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    width: 100%;
+}
+
+
+
+
+/*********************************
+            IMAGES-section
+*********************************/
+.images {
+    margin: 71px 0 56px;
+}
+
+.container {
+    width: 41.0625em;
+    margin: 0 auto;
+}
+
+.tours {
+    float: left;
+}
+
+.tours figure {
+    margin-bottom: 38px;
+}
+
+.tours figcaption {
+    margin-top: 28px;
+    color: #404658;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+.tours:nth-child(2) {
+    margin-left: 3.5em;
+}
+
+.tours-image {
+    position: relative;
+
+    width: 300px;
+    height: 170px;
+
+    overflow: hidden;
+}
+
+.tours-image img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.tours-image img:hover,
+.tours-image img:focus {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+}
+
+.tours-image-overlayer {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all .5s cubic-bezier(0.4, 0, 1, 1) 0s;
+    -o-transition: all .5s cubic-bezier(0.4, 0, 1, 1) 0s;
+    -moz-transition: all .5s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transition: all .5s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+
+.tours-image:hover .tours-image-overlayer,
+.tours-image:focus .tours-image-overlayer  {
+    right: 0;
+}
+
+.tours-details {
+    display: inline-block;
+    position: relative;
+
+    width: 300px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.text-bg {
+    display: block;
+    width: 170px;
+    height: 45px;
+
+    margin: 0 auto;
+
+    background: linear-gradient(to bottom,
+    transparent 20%,
+    transparent 40%, transparent 60%,
+    #d09f76 60%, #d09f76 80%,
+    transparent 80%);
+    opacity: 0.2;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.text-inner {
+    display: block;
+    overflow: hidden;
+    width: 170px;
+
+    margin: 0 auto;
+    opacity: 1;
+
+    transition: left 0.3s linear;
+
+    text-align: center;
+    color: #d09f76;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 26px;
+    text-decoration: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.tours-details:hover .text-bg,
+.tours-details:focus .text-bg {
+    height: 45px;
+
+    background-color:  #d09f76;
+    opacity: 0.2;
+    z-index: 1000;
+
+    cursor: pointer;
+    overflow: hidden;
+    width: 170px;
+}
+
+.tours-details:hover .text-inner,
+.tours-details:focus .text-inner {
+    overflow: hidden;
+    width: 170px;
+    left: 200px;
+    opacity: 0;
+    z-index: 1;
+}
+
+
+.details-separator {
+    position: absolute;
+    top: 50%;
+    left: -75px;
+    transition: left 0.3s linear;
+
+    opacity: 0;
+
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.tours-details:hover .details-separator,
+.tours-details:focus .details-separator {
+    left: 0;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.separator-left {
+    float: left;
+
+    width: 90px;
+    height: 1px;
+
+    margin-right: 45px;
+
+    opacity: 0.15;
+
+    background-color: #d09f76;
+}
+
+.separator-center {
+    float: left;
+
+    background: url("../img/arrow-img.png");
+
+    width: 30px;
+    height: 5px;
+
+    margin-top: -3px;
+    margin-right: 45px;
+}
+
+.separator-right {
+    float: left;
+    width: 90px;
+    height: 1px;
+
+    opacity: 0.15;
+
+    background-color: #d09f76;
+}
+
+
+
+/*********************************
+            SLIDER-section
+*********************************/
+.slider {
+    margin: 0 auto;
+    text-align: center;
+
+    width: 770px;
+    height: 443px;
+}
+
+.slider-container {
+    position: relative;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.slider-image img {
+    width: 770px;
+    height: 443px;
+}
+
+.slider-caption {
+    position: relative;
+
+    margin-left: 44px;
+
+    color: #404558;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 25px;
+    text-align: left;
+}
+
+.slider-caption:before {
+    position: absolute;
+    left: -6%;
+    top: 50%;
+
+    content: "";
+
+    width: 30px;
+    height: 1px;
+    background-color: #e1a075;
+}
+
+.slider-image-overlay-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50px;
+    width: 100px;
+    text-align: justify;
+    opacity: 0.5;
+    background-color: #3a4358;
+}
+
+.slider-image-overlay-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 50px;
+    width: 100px;
+    text-align: justify;
+    opacity: 0.5;
+    background-color: #3a4358;
+}
+
+.slider-image-overlay-right:focus,
+.slider-image-overlay-right:hover,
+.slider-image-overlay-left:focus,
+.slider-image-overlay-left:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slider-image-overlay-controls {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 30px;
+    height: 6px;
+
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.slider-image-overlay-controls:hover,
+.slider-image-overlay-controls:focus {
+    opacity: 1;
+}
+
+.slider-image-overlay-btn_left {
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    transition: left 0.3s linear;
+
+    opacity: 1;
+
+    background: url("../img/arrow-left.png") no-repeat;
+}
+
+.slider-image-overlay-left:focus .slider-image-overlay-btn_left,
+.slider-image-overlay-left:hover .slider-image-overlay-btn_left {
+    left: 35%;
+
+    opacity: 1;
+    /*width: calc(30px - 3px*2);*/
+    transform: scale(.8);
+}
+
+.slider-image-overlay-btn_right {
+    position: absolute;
+    top: 50%;
+    right: -3px;
+
+    transition: right 0.3s linear;
+
+    background: url("../img/arrow-right.png") no-repeat;
+}
+
+.slider-image-overlay-right:focus .slider-image-overlay-btn_right,
+.slider-image-overlay-right:hover .slider-image-overlay-btn_right {
+    right: 35%;
+
+    opacity: 1;
+
+    transform: scale(.8);
+    /*min-width: 25px;*/
+}
+
+
+.slider-caption {
+    opacity: 0;
+}
