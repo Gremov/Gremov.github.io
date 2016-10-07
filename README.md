@@ -1,3 +1,3 @@
-Gennadii Remizov FE develop
+Gennadii Remizov Front-end developper
 
-Тут находятся мои учебные работы
+My projects
