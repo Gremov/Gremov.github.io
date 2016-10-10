@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     // autoprefixer = require('gulp-autoprefixer'),
     livereload = require('gulp-livereload'),
     connect = require('gulp-connect'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    jade = require('gulp-jade');
 // csscomb = require('gulp-csscomb');
 
 gulp.task('connect', function() {
@@ -15,7 +16,7 @@ gulp.task('connect', function() {
     });
 });
 
-
+// CSS
 gulp.task('css', function () {
     return gulp.src('scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
@@ -28,6 +29,7 @@ gulp.task('css', function () {
         .pipe(connect.reload());
 });
 
+// Modal css
 gulp.task('modals-css', function () {
     return gulp.src('modals/**/*.scss')
         .pipe(concat('modals-all.scss'))
@@ -42,21 +44,16 @@ gulp.task('modals-css', function () {
         .pipe(connect.reload());
 });
 
+// HTML
 gulp.task('html', function () {
     gulp.src('*.html')
         .pipe(connect.reload());
 });
 
+// JS
 gulp.task('js', function () {
     gulp.src('./js/*.js')
         .pipe(connect.reload());
-});
-
-gulp.task('watch', function() {
-    gulp.watch('scss/**/*.scss', ['css'])
-    gulp.watch('modals/**/*.scss', ['modals-css'])
-    gulp.watch('*.html', ['html'])
-    gulp.watch('./js/*.js', ['js'])
 });
 
 // gulp.task( 'csscombsass', function( ){
@@ -70,4 +67,21 @@ gulp.task('watch', function() {
 //     .pipe(gulp.dest('./'));
 // } );
 
-gulp.task('default', ['html', 'css','js', 'connect', 'modals-css', 'watch']);
+
+// Jade
+gulp.task('jade', function(){
+    gulp.src('./views/*.jade')
+        .pipe(jade())
+        .pipe(gulp.dest('./dist/'))
+});
+
+// Watch
+gulp.task('watch', function() {
+    gulp.watch('scss/**/*.scss', ['css'])
+    gulp.watch('modals/**/*.scss', ['modals-css'])
+    gulp.watch('*.html', ['html'])
+    gulp.watch('./js/*.js', ['js'])
+    gulp.watch('./views/*.jade',['jade']);
+});
+
+gulp.task('default', ['html', 'css','js', 'connect', 'modals-css', 'jade', 'watch']);

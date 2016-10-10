@@ -17,12 +17,12 @@ var changeImageRight = function() {
     // caption[active].style.opacity = "0";
     active++;
     if (active < images.length){
-        images[active].style.display = "block";
+        images[active].style.display = "blocks";
         // caption[active].style.opacity = "1";
         // caption[active].style.transitionDelay = "3s";
     } else{
         active = 0;
-        images[active].style.display = "block";
+        images[active].style.display = "blocks";
         // caption[active].style.opacity = "1";
         // caption[active].style.opacity = "1";
         // caption[active].style.transitionDelay = "3s";
@@ -34,13 +34,13 @@ var changeImageLeft = function() {
     // caption[active].style.opacity = "0";
     active--;
     if (active >= 0){
-        images[active].style.display = "block";
+        images[active].style.display = "blocks";
         // caption[active].opacity = "1";
         // caption[active].style.opacity = "1";
         // caption[active].style.transitionDelay = "3s";
     } else{
         active = images.length - 1;
-        images[active].style.display = "block";
+        images[active].style.display = "blocks";
         // caption[active].opacity = "1";
         // caption[active].style.opacity = "1";
         // caption[active].style.transitionDelay = "3s";

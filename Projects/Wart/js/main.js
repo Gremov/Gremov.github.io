@@ -2,22 +2,22 @@ window.onload = function () {
     
     var parentElementA = document.getElementById('field-item-A');
     parentElementA.onmouseover = function(e) {
-        $(e.currentTarget).find('.field-link').children().css('display', 'block')
+        $(e.currentTarget).find('.field-link').children().css('display', 'blocks')
     };
 
     var parentElementB = document.getElementById('field-item-B');
     parentElementB.onmouseover = function(e) {
-        $(e.currentTarget).find('.field-link').children().css('display', 'block')
+        $(e.currentTarget).find('.field-link').children().css('display', 'blocks')
     };
     
     var parentElementC = document.getElementById('field-item-C');
     parentElementC.onmouseover = function(e) {
-        $(e.currentTarget).find('.field-link').children().css('display', 'block')
+        $(e.currentTarget).find('.field-link').children().css('display', 'blocks')
     };
     
     var parentElementD = document.getElementById('field-item-D');
     parentElementD.onmouseover = function(e) {
-        $(e.currentTarget).find('.field-link').children().css('display', 'block');
+        $(e.currentTarget).find('.field-link').children().css('display', 'blocks');
     };
     
 
@@ -42,7 +42,7 @@ window.onload = function () {
     function linesShow(e) {
         var lineElements = document.getElementsByClassName("field-scenario1");
         for (var i = 0; i < lineElements.length; i++) {
-            lineElements[i].style.display='block';
+            lineElements[i].style.display='blocks';
         };
     };
     
@@ -51,7 +51,7 @@ window.onload = function () {
     function pointNamesShow(e) {
          var pointElementNamesShow = document.getElementsByClassName("field-text");
          for (var i = 0; i < pointElementNamesShow.length; i++) {
-            pointElementNamesShow[i].style.display='block';
+            pointElementNamesShow[i].style.display='blocks';
          };
     };
 
