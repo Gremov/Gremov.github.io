@@ -1,0 +1,364 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
+
+
+body {
+    position: relative;
+    overflow: hidden;
+    font: 100%/1.5em Roboto, Arial, Tahoma, sans-serif;
+
+    color: #000000;
+}
+
+.header {
+    margin: 0 auto;
+    padding-top: 2em;
+    text-align: center;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: "";
+
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 0;
+}
+
+.main-page {
+    background: url(../img/bg-stone.jpg), url(../img/bg-man.jpg) center center no-repeat;
+
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+
+    background-blend-mode: screen;
+}
+
+
+
+/*********************************
+            HEADER
+*********************************/
+.nav-bar {
+    display: block;
+    background: white;
+    position: absolute;
+    top: 0;
+    right: -75%;
+
+    width: 100%;
+    height: 650px;
+
+    opacity: 0;
+}
+
+.logo-wrap {
+    float: left;
+
+    position: relative;
+    left: 0;
+    min-width: 10%;
+
+    margin-top: .5em;
+    margin-left: 3em;
+
+    z-index: 1;
+}
+
+.logo a {
+    display: block;
+
+    width: 125px;
+    height: 45px;
+
+    background: url(../img/logo.png) top center no-repeat;
+}
+
+.lan {
+    position: relative;
+    left: -100px;
+
+    margin-top: 1em;
+
+    opacity: 0;
+}
+
+.lan-item {
+    position: relative;
+    display: inline-block;
+
+    margin-left: 1.25em;
+}
+
+.lan-link-active {
+    color: rgba(0,0,0,.7);
+    font-weight: 700;
+}
+
+.lan-link {
+    color: #000000;
+    font-size: 1em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.menu {
+    margin-top: 3.125em;
+}
+
+.menu-item:first-child,
+.menu-item:nth-child(2),
+.menu-item:nth-child(3),
+.menu-item:nth-child(4),
+.menu-item:nth-child(5),
+.menu-item:last-child {
+    position: relative;
+    top: 1.875em;
+
+    width: 40%;
+    margin: 0 auto;
+
+    opacity: 0;
+
+    border-bottom: .0125em solid rgba(0, 0, 0, .3);
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+select,
+.hamburger {
+    float: right;
+}
+
+.network-list {
+    position: relative;
+    left: -40px;
+
+    margin-top: 3.125em;
+
+    opacity: 0;
+}
+
+.network-item {
+    display: inline-block;
+
+    margin-top: 3.125em;
+    margin-left: 1.875em;
+}
+
+.network-link {
+    display: block;
+
+    font-size: 2em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu-link {
+    color: #000000;
+    font-size: 1em;
+    line-height: 3.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.lan-wrap {
+    position: relative;
+
+    float: right;
+    margin: 0 auto;
+}
+
+select.lan-selected {
+    position: relative;
+
+    width: 100px;
+    height: 60px;
+
+    -webkit-appearance: none;
+
+    background: url(../img/favicon.ico) 56% / 15% no-repeat #eee;
+    background-color: transparent;
+
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 1.25em;
+
+    border: none;
+
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: .000625em;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+
+    cursor: pointer;
+
+    z-index: 1000;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.hamburger {
+    position: relative;
+
+    min-width: 20%;
+}
+
+.hamburger-open,
+.hamburger-icon {
+    float: right;
+}
+
+.hamburger-close {
+    opacity: 0;
+    margin-right: -7.5em;
+}
+
+.hamburger-open {
+    margin-right: 1.5em;
+}
+
+.hamburger-open a,
+.hamburger-close a {
+    color: #000000;
+    font-size: 1em;
+    line-height: 3.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.hamburger-icon {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    margin: .3125em 1.875em .3125em  0;
+}
+
+.hamburger-icon:hover {
+    cursor: pointer;
+}
+
+.icon-inner {
+    display: inline-block;
+
+    width: 4px;
+    height: 35px;
+
+    background: rgba(0,0,0,.7);
+
+    transform: rotate(20deg);
+
+    -webkit-border-radius: .3125em;
+    -moz-border-radius: .3125em;
+    -webkit-border-radius: .3125em;
+    -moz-border-radius: .3125em;
+    border-radius: .3125em;
+}
+
+.inner-left {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+
+    -webkit-transition: .4s ease-in-out;
+       -moz-transition: .4s ease-in-out;
+        -ms-transition: .4s ease-in-out;
+         -o-transition: .4s ease-in-out;
+            transition: .4s ease-in-out;
+}
+
+.hamburger-icon:hover .inner-left {
+    top: -20%;
+}
+
+.inner-center {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
+.inner-right {
+    position: absolute;
+    bottom: 7%;
+    right: 15%;
+
+    -webkit-transition: .4s ease-in-out;
+       -moz-transition: .4s ease-in-out;
+        -ms-transition: .4s ease-in-out;
+         -o-transition: .4s ease-in-out;
+            transition: .4s ease-in-out;
+}
+
+.hamburger-icon:hover .inner-right {
+    bottom: -20%;
+    -webkit-transform-origin: left center;
+       -moz-transform-origin: left center;
+         -o-transform-origin: left center;
+            transform-origin: left center;
+}
+
+.hamburger-icon.open .inner-left {
+    top: 20%;
+    -webkit-transform: rotate(140deg);
+       -moz-transform: rotate(140deg);
+        -ms-transform: rotate(140deg);
+         -o-transform: rotate(140deg);
+            transform: rotate(140deg);
+}
+
+.hamburger-icon.open .inner-center {
+    opacity: 0;
+    -webkit-transform-origin: left center;
+       -moz-transform-origin: left center;
+         -o-transform-origin: left center;
+            transform-origin: left center;
+}
+
+.hamburger-icon.open .inner-right {
+    right: 65%;
+    top: 20%;
+
+    -webkit-transform: rotate(40deg);
+       -moz-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+         -o-transform: rotate(40deg);
+            transform: rotate(40deg);
+}
+
+
+
+
+/*********************************
+            CONTENT
+*********************************/
+
+.content {
+    position: relative;
+    width: 60%;
+
+    padding: 16em 0;
+    margin: 0 auto;
+}
+
+.content-inner {
+    color: rgba(0,0,0,.7);
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
