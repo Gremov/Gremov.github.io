@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Vintage/travelonista__markup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Vintage/travelonista__markup-backup_ver-Mon_24_Oct_2016_12-34-00" vcs="Git" />
   </component>
 </project>

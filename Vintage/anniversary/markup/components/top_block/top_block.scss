@@ -1,0 +1,71 @@
+
+
+/*********************************
+            CONTENT
+*********************************/
+.container {
+    position: relative;
+
+    width: auto;
+    height: 723px;
+
+    background: url("../../static/img/content/home/main-bg.jpg") center center no-repeat;
+    background-size: cover;
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        //display: inline-block;
+        width: 201px;
+        height: 43px;
+
+        margin: 0 auto;
+        //text-align: left;
+
+        background: url("../../static/img/content/home/logo.png") center center no-repeat;
+        background-size: cover;
+    }
+
+    h2 {
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        //display: inline-block;
+        margin: 0 auto;
+        //text-align: right;
+
+        color: white;
+        font-family: UniSansHeavy;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 47px;
+        text-transform: uppercase;
+    }
+
+    .scroll {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        &-line {
+            position: relative;
+            width: 1px;
+            height: 75px;
+            background-color: white;
+            span {
+                position: absolute;
+                bottom: -55%;
+                left: -20px;
+                color: white;
+                font-family: RobotoCondensed;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 36px;
+                text-transform: uppercase;
+            }
+        }
+
+
+    }
+}
+
+

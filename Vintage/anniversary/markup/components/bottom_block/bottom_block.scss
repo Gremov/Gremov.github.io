@@ -1,0 +1,103 @@
+/*********************************
+            CONTENT
+*********************************/
+.container-bottom {
+    position: relative;
+
+    width: auto;
+    height: 861px;
+    padding-top: 109px;
+
+    background: black;
+
+    .scroll {
+        position: absolute;
+        top: 6.5%;
+        left: 59px;
+        &-line {
+            position: relative;
+            width: 75px;
+            height: 1px;
+            background-color: white;
+            span {
+                position: absolute;
+                bottom: -18px;
+                left: 100px;
+                width: 192px;
+                color: white;
+                font-family: RobotoCondensed;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 36px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .content {
+        width: 68%;
+        //width: 961px;
+
+        margin-left: 157px;
+
+        color: white;
+        &-title {
+            font-family: UniSansBold;
+            font-size: 52px;
+            font-weight: 400;
+            line-height: 60px;
+            text-align: left;
+        }
+        &-item {
+            margin-top: 50px;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: left;
+            span {
+                display: block;
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+        }
+        .buttons{
+            margin-top: 80px;
+            width: 100%;
+            &-title {
+                display: inline-block;
+                width: 250px;
+                color: white;
+                font-family: UniSansBold;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 60px;
+            }
+            &-congrats {
+                display: inline-block;
+                width: 189px;
+                a {
+                    display: inline-block;
+                    list-style: none;
+                    color: white;
+                    font-family: UniSansHeavyCAPS;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 42px;
+                    text-transform: uppercase;
+                }
+            }
+            &-congrats-more {
+                display: inline-block;
+                width: 351px;
+                a {
+                    display: inline-block;
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+
+}
