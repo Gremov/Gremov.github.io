@@ -1,0 +1,7 @@
+.idea
+tasks-actions
+node_modules
+.vagrant
+bower_components
+npm-debug.log
+.DS_Store
